@@ -1,0 +1,161 @@
+.container {
+  max-width: 1280px;
+  margin: auto;
+  padding: 1rem;
+  overflow: hidden;
+}
+
+.item {
+  background: #312f2f;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  line-height: 1.5;
+  background: #000;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+ul {
+  list-style: none;
+}
+
+h2 {
+  color: #fff;
+}
+
+img {
+  width: 100%;
+}
+
+#logo {
+  width: 170px;
+  height: 60px;
+}
+
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+}
+#navbar ul {
+  display: flex;
+}
+#navbar li {
+  padding: 1rem 1rem;
+}
+#navbar a {
+  text-transform: uppercase;
+  border-bottom: 2px transparent solid;
+  padding-bottom: 0.5rem;
+  transition: border-color 0.5s;
+}
+#navbar a:hover {
+  border-color: #fff;
+}
+#navbar a.current {
+  border-color: #FF6900;
+}
+
+#section .item {
+  border-radius: 15px;
+  transition: background 0.4s ease-in-out;
+  padding: 1.5rem;
+  text-align: center;
+}
+#section .item:hover {
+  background: #FF6900;
+  scale: 1.02;
+}
+#section .items {
+  margin-top: 5rem;
+  display: grid;
+  grid-gap: 1.5rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+#section .item1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  display: flex;
+  justify-content: space-between;
+}
+#section .item1 .item-image {
+  padding: 1rem;
+}
+#section .item2 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+#section .item5,
+#section .item6 {
+  grid-row-start: 3;
+  grid-row-end: 5;
+}
+#section .item1,
+#section .item2,
+#section .item3,
+#section .item4,
+#section .item5,
+#section .item6,
+#section .item7,
+#section .item8 {
+  position: relative;
+}
+#section .item1 a,
+#section .item2 a,
+#section .item3 a,
+#section .item4 a,
+#section .item5 a,
+#section .item6 a,
+#section .item7 a,
+#section .item8 a {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
+#section .item1 p,
+#section .item2 p,
+#section .item3 p,
+#section .item4 p,
+#section .item5 p,
+#section .item6 p,
+#section .item7 p,
+#section .item8 p {
+  margin: 10px;
+}
+#section .fa-contact {
+  color: #fff;
+  text-transform: lowercase !important;
+  padding: 1rem;
+}
+
+#footer {
+  color: #fff;
+  height: 5rem;
+}
+#footer .footer-content {
+  display: flex;
+  justify-content: space-between;
+  height: 5rem;
+  align-items: center;
+}
+#footer .footer-content .social .fab {
+  margin-right: 1rem;
+  text-align: center;
+  padding: 0.5rem;
+}
+#footer .footer-content .social .fab:hover {
+  color: #FF6900;
+}/*# sourceMappingURL=main.css.map */

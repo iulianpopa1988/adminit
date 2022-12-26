@@ -1,0 +1,168 @@
+@import 'config';
+@import 'utilities';
+
+                    // General
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    line-height: 1.5;
+    background: $bg-color;
+}
+
+a {
+    text-decoration: none;
+    color: $light-color;
+}
+
+ul {
+    list-style: none;
+}
+
+h2 {
+    color: $light-color;
+}
+
+img {
+    width: 100%;
+}
+
+
+                    // Logo
+#logo {
+    width: 170px;
+    height:60px;
+}
+
+                    // Navbar
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+
+    ul {
+        display: flex;
+    }
+
+    li {
+        padding: 1rem 1rem;
+    }
+
+    a {
+        text-transform: uppercase;
+        border-bottom: 2px transparent solid;
+        padding-bottom: 0.5rem;
+        transition: border-color 0.5s;
+
+        &:hover {
+            border-color: $light-color;
+        }
+
+        &.current {
+            border-color: $color;
+        }
+    }
+}
+
+                    // Section
+#section {
+    .item {
+        border-radius: 15px;
+        transition: background 0.4s ease-in-out;
+        padding: 1.5rem;
+        text-align: center;
+
+        &:hover {
+            background: $color;
+            scale: 1.02;
+        }
+    }
+
+    .items {
+        margin-top: 5rem;
+        display: grid;
+        grid-gap: 1.5rem;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .item1 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        display: flex;
+        justify-content: space-between;
+
+            .item-image {
+                padding: 1rem;
+            }
+    }
+
+    .item2 {
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+
+    .item5,
+    .item6 {
+        
+        grid-row-start: 3;
+        grid-row-end: 5;
+    }
+
+    .item1,
+    .item2,
+    .item3,
+    .item4,
+    .item5,
+    .item6,
+    .item7,
+    .item8 {
+        position: relative;
+
+            a {
+                position: absolute;
+                right: 10px;
+                bottom: 10px;
+            }
+
+            p {
+                margin: 10px;
+            }
+    }
+
+    .fa-contact {
+        color: $light-color;
+        text-transform: lowercase !important;
+        padding: 1rem;
+    }
+}
+
+
+
+                    // Footer
+#footer {
+    color: $light-color;
+    height: 5rem;
+
+    .footer-content {
+        display: flex;
+        justify-content: space-between;
+        height: 5rem;
+        align-items: center;
+
+            .social .fab {
+                margin-right: 1rem;
+                text-align: center;
+                padding: 0.5rem;
+
+                    &:hover {
+                        color: $color;
+                    }
+            }
+    }
+}
