@@ -25,6 +25,7 @@ ul {
 
 h2 {
     color: $light-color;
+    font-size: 1.5rem;
 }
 
 img {
@@ -42,10 +43,14 @@ img {
 #navbar {
     display: flex;
     justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 1;
     padding-top: 1rem;
 
     ul {
         display: flex;
+        align-items: center;
     }
 
     li {
@@ -82,11 +87,53 @@ img {
         }
     }
 
+    .item5 {
+
+        .clients {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 0.5rem;
+            padding: 0.5rem;
+        }
+    }
+
+    .item6 {
+
+        .testimonials {
+
+            ul {
+                list-style: none;
+                display: flex;
+                align-items: center;
+            }
+
+            img {
+                width: 70px;
+                height: 70px;
+                border-radius: 50%;
+            }
+
+            li {
+
+                &:last-child {
+                    font-size: 1.5rem;
+                    margin-left: 2rem;
+                    color: $light-color;
+                }
+            }
+        }
+    }
+
     .items {
         margin-top: 5rem;
         display: grid;
         grid-gap: 1.5rem;
         grid-template-columns: repeat(3, 1fr);
+
+            p {
+                color: $light-color;
+                font-size: 0.9rem;
+            }
     }
 
     .item1 {
@@ -97,6 +144,13 @@ img {
 
             .item-image {
                 padding: 1rem;
+
+                img {
+                    width: 160px;
+                    height: 160px;
+                    border-radius: 50%;
+
+                }
             }
     }
 
